@@ -9,6 +9,7 @@ var angularApp = angular.module('angularApp',['ngResource'])
 						templateUrl:'templates/resourceList',
 						controller:'ResourceListController'
 					});
+					$routeProvider.otherwise({redirectTo:'/'});
 
 					$.cookie.settings = {
 						path:'/',
