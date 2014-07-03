@@ -1,13 +1,9 @@
 'use strict';
-var angularApp = angular.module('angularApp',['ngResource'])
+var angularApp = angular.module('angularApp',['ngResource','ngRoute'])
 				.config(function($routeProvider){
 					$routeProvider.when('/',{
 						templateUrl:'templates/HomePage'
 						
-					});
-					$routeProvider.when('/resource',{
-						templateUrl:'templates/resourceList',
-						controller:'ResourceListController'
 					});
 					$routeProvider.otherwise({redirectTo:'/'});
 
